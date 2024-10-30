@@ -1,0 +1,48 @@
+*{
+    @font-face {
+        font-family: 'HakgyoansimDunggeunmisoTTF-B';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+    }
+    font-family: HakgyoansimDunggeunmisoTTF-B, serif;
+}
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #2c3e50;
+}
+.table-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(12px);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+a.action-link {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+a.action-link:hover {
+    color: #c0392b;
+}

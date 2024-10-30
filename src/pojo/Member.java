@@ -1,19 +1,19 @@
-package domain;
+package pojo;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@AllArgsConstructor
 public class Member {
     private String id;
     private String pw;
     private String name;
-    public Member() {}
+
+    public Member(String id, String pw, String name) {
+        this.id = id;
+        this.pw = pw;
+        this.name = name;
+    }
+
+    public Member() {
+    }
 
     public String getId() {
         return id;

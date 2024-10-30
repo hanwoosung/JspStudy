@@ -1,4 +1,4 @@
-<%@ page import="domain.Member" %><%--
+<%@ page import="pojo.Member" %><%--
   Created by IntelliJ IDEA.
   User: GGG
   Date: 2024-10-28

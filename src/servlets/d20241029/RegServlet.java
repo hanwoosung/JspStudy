@@ -1,6 +1,7 @@
 package servlets.d20241029;
 
-import domain.Member;
+
+import pojo.Member;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,7 +25,6 @@ public class RegServlet extends HttpServlet {
         for (String key : request.getParameterMap().keySet()) {
             String value = request.getParameter(key);
             System.out.println(value);
-            
             if (key.equals("userId")) member.setId(value);
             else if (key.equals("userPw")) member.setPw(value);
             else if (key.equals("name")) member.setName(value);
