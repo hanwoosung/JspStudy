@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<jsp:useBean id="member" class="pojo.Member" scope="request"/>
+<jsp:useBean id="member" class="D20241031.pojo.Member" scope="request"/>
 <jsp:setProperty name="member" property="id" value="나는"/>
 <jsp:setProperty name="member" property="pw" value="김상준"/>
 <jsp:setProperty name="member" property="name" value="문어라네"/>

@@ -4,7 +4,7 @@
     <title>Title</title>
 </head>
 <body>
-<jsp:useBean id="member" class="pojo.Member" scope="request"/>
+<jsp:useBean id="member" class="D20241031.pojo.Member" scope="request"/>
 <jsp:setProperty name="member" property="*"/>
 
 <h1 style="color: red">${param.result} </h1>

@@ -14,7 +14,7 @@
 <%
   request.setCharacterEncoding("utf-8");
 %>
-<jsp:useBean id="member" class="pojo.Member" scope="page"></jsp:useBean>
+<jsp:useBean id="member" class="D20241031.pojo.Member" scope="page"></jsp:useBean>
 <jsp:setProperty name="member" property="*"  />
 <h3>회원정보</h3>
 아이디 : <jsp:getProperty name="member" property="id"/> <br>

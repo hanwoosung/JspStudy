@@ -16,13 +16,13 @@
         <hr>
 
         <%--   <c:set var="x" value="10"/>
-           <c:if test="${x  == 10}">
+           <c:if D20241031.test="${x  == 10}">
                <p>x 에 저장된 값은 10입니다.</p>
            </c:if>
            <c:redirect url="sess-page.jsp" />--%>
 
         <%--
-                <c:if test="${param.id == 'hgd' && param.pw == '1234'}">
+                <c:if D20241031.test="${param.id == 'hgd' && param.pw == '1234'}">
                     <c:set var="id" value="${param.id}" scope="session" />
                     <c:redirect url="suss.jsp" />
                 </c:if>

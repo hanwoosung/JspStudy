@@ -9,9 +9,9 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    // request.setAttribute("test","테스트용");
-    // response.sendRedirect("rep_result.jsp?test="+ URLEncoder.encode("부끄뎡", StandardCharsets.UTF_8);
-    request.getRequestDispatcher("request_foward.jsp?test="+URLEncoder.encode("부끄뎡", StandardCharsets.UTF_8)).forward(request, response);
+    // request.setAttribute("D20241031.test","테스트용");
+    // response.sendRedirect("rep_result.jsp?D20241031.test="+ URLEncoder.encode("부끄뎡", StandardCharsets.UTF_8);
+    request.getRequestDispatcher("request_foward.jsp?D20241031.test="+URLEncoder.encode("부끄뎡", StandardCharsets.UTF_8)).forward(request, response);
 %>
 <html>
 <head>

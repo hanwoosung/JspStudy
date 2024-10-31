@@ -19,7 +19,7 @@
         <c:set var="age">${10}</c:set>
         age : ${age}<Br>
 
-        <c:set var="member" value="<%= new pojo.Member() %>" scope="session" />
+        <c:set var="member" value="<%= new D20241031.pojo.Member() %>" scope="session" />
         <c:set target="${member}" property="id" value="aaa" />
         <c:set target="${member}" property="pw" value="1234" />
         <c:set target="${member}" property="name" value="kim" />
