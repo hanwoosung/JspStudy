@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-    <link rel="stylesheet" href="resources/header.css"/>
+    <link rel="stylesheet" href="header.css"/>
     <head>
         <title>Title</title>
     </head>
@@ -17,12 +17,13 @@
         </div>
         <div class="nav">
             <ul>
-               <li> <a  href="regist.jsp">주문등록</a></li>
-               <li> <a  href="orderList.jsp">주문목록조회</a></li>
-               <li> <a  href="shopOrderList.jsp">점포별주문현황</a></li>
-               <li> <a  href="productList.jsp">제품코드조회</a></li>
+               <li> <a  href="/20241101/regist.jspegist.jsp">회원등록</a></li>
+               <li> <a href="/20241101/custList.jsptList.jsp">회원목록조회</a></li>
+               <li> <a href="/20241101/salseList.jspeList.jsp">회원매출조회</a></li>
                <li> <a href="/">홈으로</a></li>
             </ul>
+
         </div>
+
     </body>
 </html>

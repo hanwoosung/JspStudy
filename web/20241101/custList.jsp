@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="dao.CustmerDaoImpl" %>
-<%@ page import="dto.CustmerDto" %>
+<%@ page import="D20241101.dao.CustmerDaoImpl" %>
+<%@ page import="D20241101.dto.CustmerDto" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: GGG
@@ -12,11 +12,11 @@
 <html>
     <head>
         <%
-            CustmerDaoImpl dao = new CustmerDaoImpl();
+            CustmerDaoImpl D20241101.dao = new CustmerDaoImpl();
            List<CustmerDto> custList =  dao.getCustmerList();
         %>
         <title>Title</title>
-        <link rel="stylesheet" href="/resources/main.css">
+        <link rel="stylesheet" href="/20241101/resources/main.css">
 
     </head>
     <body>

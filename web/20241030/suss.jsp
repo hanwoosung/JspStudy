@@ -4,8 +4,8 @@
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    MemberDao D20241031.dao = new MemberDao();
-    List<Member> memberList = dao.getMemberList();
+    MemberDao D20241031.D20241101.dao = new MemberDao();
+    List<Member> memberList = D20241101.dao.getMemberList();
 %>
 <!DOCTYPE html>
 <html>

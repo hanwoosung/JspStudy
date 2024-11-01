@@ -22,5 +22,6 @@
           <h2 style="color:white;">HRDKOREA Copyrightⓒ 2016 All rights reserved. Human Resources Development Service of Korea</h2>
         </div>
       </div>
+
     </body>
 </html>

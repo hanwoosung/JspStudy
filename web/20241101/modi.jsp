@@ -1,6 +1,6 @@
 <%@ page import="java.time.format.DateTimeFormatter" %>
-<%@ page import="dao.CustmerDaoImpl" %>
-<%@ page import="dto.CustmerDto" %><%--
+<%@ page import="D20241101.dao.CustmerDaoImpl" %>
+<%@ page import="D20241101.dto.CustmerDto" %><%--
   Created by IntelliJ IDEA.
   User: GGG
   Date: 2024-10-31
@@ -12,11 +12,11 @@
     <head>
         <title>Title</title>
         <%
-            CustmerDaoImpl dao = new CustmerDaoImpl();
+            CustmerDaoImpl D20241101.dao = new CustmerDaoImpl();
             CustmerDto custmer = dao.getCustmer(Integer.parseInt(request.getParameter("custno")));
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMdd");
         %>
-        <link rel="stylesheet" href="/resources/main.css">
+        <link rel="stylesheet" href="/20241101/resources/main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
         <style>

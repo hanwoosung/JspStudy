@@ -1,32 +1,39 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
- Created by IntelliJ IDEA.
- User: GGG
- Date: 2024-10-31
- Time: 오전 9:32
- To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: GGG
+  Date: 2024-11-01
+  Time: 오전 9:06
+  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
         <title>Title</title>
-        <link rel="stylesheet" href="/resources/main.css">
+
+        <style>
+            .main-container{
+                width: 100%;
+                height: 80vh;
+                margin: 0 auto;
+                background-color: gray;
+            }
+        </style>
     </head>
     <body>
-        <jsp:include page="header.jsp" />
+        <%@include file="header.jsp"%>
         <div class="main-container">
-            <div class="main-box2" style="text-align: center"><h2>쇼핑몰회원관리 시스템</h2></div>
-            <span>쇼핑몰 회원정보와 회원매출정보 데이터베이스를 구축하고 회원관리 프로그램을 작성하는 프로그램이다.</span><br>
-            <span>프로그램 작성문서</span>
-            <div >
-                <p>1. 회원정보 테이블을 생성한다</p>
-                <p>2. 매출정보 테이블을 생성한다</p>
-                <p>3. 회원정보, 매출정보테이블에 제시된 문제지의 참조데이터를 추가 생성한다.</p>
-                <p>4. 회원정보 입력 화면프로그램을 작성한다</p>
-                <p>5. 회원정보 조회 프로그램을 작성한다.</p>
-                <p>6. 회원매출정보 조회 프로그램을 작성한다.</p>
-            </div>
+            과정평가형 자격 CBQ<br>
+
+            국가직무능력표준(NCS: National Competency Standards)으로 설계된<br>
+            교육훈련과정을 체계적으로 이수하고 내외부 평가를 거쳐 취득하는 국가기술자격입니다.<br>
+
+            산업현장 중심의 교육과정으로 더 갖추는 능력:<br>
+            알고 있는 것에 꼭 할 수 있는 것을 더하는 과정평가형 자격은 현장 중심형 인재육성을 지원합니다.<br>
+
         </div>
-        <jsp:include page="footer.jsp" />
+
+        <%@include file="footer.jsp"%>
+
     </body>
+
 </html>

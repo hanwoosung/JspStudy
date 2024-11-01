@@ -1,99 +1,74 @@
-<%@ page import="java.time.format.DateTimeFormatter" %>
-<%@ page import="java.time.LocalDate" %>
-<%@ page import="java.time.LocalDateTime" %>
-<%@ page import="dao.CustmerDaoImpl" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: GGG
+  Date: 2024-11-01
+  Time: 오전 9:09
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>Title</title>
-        <%
-            LocalDateTime now = LocalDateTime.now();
-            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMdd");
-            String sDate = now.format(dtf);
-            CustmerDaoImpl dao = new CustmerDaoImpl();
-        %>
-        <link rel="stylesheet" href="/resources/main.css">
-        <script src="resources/validateForm.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <style>
-            .main-box2 {
-                height: 80%;
-                width: 80%;
-            }
-
-            input {
-                width: 100%;
-                height: 10%;
-            }
-
-            .row-box {
-                display: flex;
-                width: 100%;
-                height: 10%;
-            }
-
-            .row-box input {
-                height: 100%;
-            }
-        </style>
+        <title>Title</title>
+        <link rel="stylesheet" href="resources/regist.css">
     </head>
     <body>
-        <jsp:include page="header.jsp" />
+        <%@include file="header.jsp" %>
         <div class="main-container">
-            <div class="main-box">
-                <div class="main-box2">
-                    <form name="registerForm" action="/join2" method="post" onsubmit="return validateForm()">
-                        <input type="text" name="custno" placeholder="회원번호" readonly
-                               value="<%=dao.getLastCustNo() + 1%>"><br>
-                        <input type="text" name="custname" placeholder="회원성명" maxlength="20"><br>
-                        <input type="text" name="phone" placeholder="회원전화" maxlength="13"><br>
-                        <input type="text" name="address" placeholder="주소" maxlength="60"><br>
-                        <input type="text" name="joindate" placeholder="가입일자" value="<%=sDate%>" readonly><br>
-                        <input type="text" name="grade" placeholder="고객등급 (A/B/C)" maxlength="1"><br>
-                        <input type="text" name="city" placeholder="거주도시" maxlength="2"><br>
-                        <div class="row-box">
-                            <input type="button" onclick="reqList()" value="등록">
-                            <input type="button" onclick=location.href="/custList.jsp" value="조회"></input>
-                    </form>
-                </div>
+            <h1>주문등록</h1>
+            <div class="form-container">
+                <form action="/order" id="registerForm" method="post" onsubmit="return validateForm()">
+                    <table class="form-table">
+                        <tr>
+                            <td>주문번호</td>
+                            <td><input type="text" name="orderNo" minlength="8" maxlength="8"></td>
+                        </tr>
+                        <tr>
+                            <td>주문점포</td>
+                            <td>
+                                <select name="shopNo">
+                                    <option value="">점포선택</option>
+                                    <option value="S001">AA 할인점</option>
+                                    <option value="S002">BB 할인점</option>
+                                    <option value="S003">CC 할인점</option>
+                                    <option value="S004">DD 할인점</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>주문일자</td>
+                            <td>
+                                <input type="text" maxlength="8" name="orderDate" placeholder="20241012형식"> </input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>제품코드</td>
+                            <td>
+                                <select name="pCode">
+                                    <option value="">코드선택</option>
+                                    <option value="AA01">삼각김밥</option>
+                                    <option value="AA02">도시락</option>
+                                    <option value="AA03">봉지만두</option>
+                                    <option value="AA04">컵라면</option>
+                                    <option value="AA05">아메리카노</option>
+                                    <option value="AA05">콜라</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>주문수량</td>
+                            <td><input type="number" min="0" name="amount"></td>
+                        </tr>
+                    </table>
+                    <div class="button-container">
+                        <button type="button" onclick="if(validateForm()) reqList();">주문등록</button>
+                        <button type="reset">다시쓰기</button>
+                    </div>
+                </form>
             </div>
         </div>
-        <jsp:include page="footer.jsp" />
-        가능합니다.
+        <%@include file="footer.jsp" %>
     </body>
-    <Script>
-        function reqList() {
-            var param = {};
-            param.custno = document.querySelector("input[name=custno]").value;
-            param.custname = document.querySelector("input[name=custname]").value;
-            param.phone = document.querySelector("input[name=phone]").value;
-            param.address = document.querySelector("input[name=address]").value;
-            param.joindate = document.querySelector("input[name=joindate]").value;
-            param.grade = document.querySelector("input[name=grade]").value;
-            param.city = document.querySelector("input[name=city]").value;
-
-            $.ajax({
-                url: "/join2",
-                type: "POST",
-                data: param,
-                success: function (data) {
-                    console.log(data);
-                    const trimmedData = data.trim();
-
-                    if (trimmedData === 'SUCCESS') {
-                        alert("성공");
-                        location.href = "custList.jsp";
-                    } else if (trimmedData === 'DUPLICATE_PHONE') alert("전화번호 중복입니다.");
-                    else if (trimmedData === 'FAILURE') alert("실패");
-                    else alert("알 수 없는 응답입니다.");
-
-                },
-                error: function (data) {
-                    console.log('error' + data);
-                    alert("통신 실패");
-                }
-            });
-        }
-
-    </Script>
+    <script src="resources/regist.js"></script>
 </html>

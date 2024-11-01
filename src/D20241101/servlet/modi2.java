@@ -1,8 +1,8 @@
-package servlet;
+package D20241101.servlet;
 
-import dao.CustmerDaoImpl;
-import dto.CustmerDto;
-import type.StatusType;
+import D20241101.dao.CustmerDaoImpl;
+import D20241101.dto.CustmerDto;
+import D20241101.type.StatusType;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

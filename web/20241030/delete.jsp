@@ -12,8 +12,8 @@
     </head>
     <body>
         <%
-            MemberDao D20241031.dao = new MemberDao();
-            dao.deleteMember(Integer.parseInt(request.getParameter("mno")));
+            MemberDao D20241031.D20241101.dao = new MemberDao();
+            D20241101.dao.deleteMember(Integer.parseInt(request.getParameter("mno")));
             response.sendRedirect("suss.jsp");
         %>
     </body>

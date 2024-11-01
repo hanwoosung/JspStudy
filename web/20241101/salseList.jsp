@@ -1,16 +1,16 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ page import="dao.CustmerDaoImpl" %>
-<%@ page import="dto.CustmerSalesDto" %>
+<%@ page import="D20241101.dao.CustmerDaoImpl" %>
+<%@ page import="D20241101.dto.CustmerSalesDto" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <%
-        CustmerDaoImpl dao = new CustmerDaoImpl();
+        CustmerDaoImpl D20241101.dao = new CustmerDaoImpl();
         List<CustmerSalesDto> salseList = dao.getCustmerSales();
     %>
     <head>
-        <link rel="stylesheet" href="/resources/main.css">
+        <link rel="stylesheet" href="/20241101/resources/main.css">
 
         <title>Title</title>
     </head>

@@ -1,7 +1,7 @@
-package dao;
+package D20241101.dao;
 
-import dto.CustmerDto;
-import dto.CustmerSalesDto;
+import D20241101.dto.CustmerDto;
+import D20241101.dto.CustmerSalesDto;
 
 import java.util.List;
 

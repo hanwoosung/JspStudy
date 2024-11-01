@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CustmerSalesDto {
-    private int custno;
-    private String custname;
-    private char grade;
-    private int sales;
+public class ShopDto {
+    private String shopNo;
+    private String shopName;
+    private int discount;
+
 }
