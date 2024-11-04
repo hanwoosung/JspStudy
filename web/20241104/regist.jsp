@@ -11,10 +11,10 @@
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <title>Title</title>
-        <link rel="stylesheet" href="resources/regist.css">
+        <link rel="stylesheet" href="../resources/regist.css">
     </head>
     <body>
-        <%@include file="header.jsp" %>
+        <%@include file="../header.jsp" %>
         <div class="main-container">
             <h1>주문등록</h1>
             <div class="form-container">
@@ -68,7 +68,7 @@
                 </form>
             </div>
         </div>
-        <%@include file="footer.jsp" %>
+        <%@include file="../footer.jsp" %>
     </body>
-    <script src="resources/regist.js"></script>
+    <script src="../resources/regist.js"></script>
 </html>

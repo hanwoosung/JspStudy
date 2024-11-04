@@ -10,8 +10,7 @@ function reqList() {
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         }
-    })
-        .then((response) => {
+    }).then((response) => {
             if (response.data.trim() === 'SUCCESS') {
                 alert("주문 성공.");
                 location.href = "orderList.jsp";

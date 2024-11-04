@@ -17,10 +17,10 @@
         </div>
         <div class="nav">
             <ul>
-               <li> <a  href="regist.jsp">주문등록</a></li>
-               <li> <a  href="orderList.jsp">주문목록조회</a></li>
-               <li> <a  href="shopOrderList.jsp">점포별주문현황</a></li>
-               <li> <a  href="productList.jsp">제품코드조회</a></li>
+               <li> <a  href="20241104/regist.jsp">주문등록</a></li>
+               <li> <a  href="20241104/orderList.jsp">주문목록조회</a></li>
+               <li> <a  href="20241104/shopOrderList.jsp">점포별주문현황</a></li>
+               <li> <a  href="20241104/productList.jsp">제품코드조회</a></li>
                <li> <a href="/">홈으로</a></li>
             </ul>
         </div>

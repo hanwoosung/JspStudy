@@ -1,7 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page import="dao.OrderDaoImpl" %>
-<%@ page import="dto.OrderListDto" %>
 <%@ page import="java.util.List" %>
 <%@ page import="dto.ShopOrderListDto" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -12,10 +11,10 @@
             OrderDaoImpl dao = new OrderDaoImpl();
             List<ShopOrderListDto> orderList = dao.shopOrderList();
         %>
-        <link rel="stylesheet" href="resources/table.css">
+        <link rel="stylesheet" href="../resources/table.css">
     </head>
     <body>
-        <%@include file="header.jsp" %>
+        <%@include file="../header.jsp" %>
         <div class="main-container">
             <table border="1" style="margin: 0 auto;">
                 <thead>
@@ -39,6 +38,6 @@
                 </tbody>
             </table>
         </div>
-        <%@include file="footer.jsp" %>
+        <%@include file="../footer.jsp" %>
     </body>
 </html>

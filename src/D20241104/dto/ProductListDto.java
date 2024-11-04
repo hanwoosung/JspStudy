@@ -1,16 +1,16 @@
-package dto;
+package D20241104.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class ShopOrderListDto {
-    private String shopNo;
+@AllArgsConstructor
+public class ProductListDto {
     private String pCode;
     private String pName;
-    private int amount;
-
+    private int cost;
+    private String  discountTen;
+    private String discountFifteen;
 }

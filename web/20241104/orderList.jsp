@@ -18,10 +18,10 @@
             OrderDaoImpl dao = new OrderDaoImpl();
             List<OrderListDto> orderList = dao.orderList();
         %>
-        <link rel="stylesheet" href="resources/table.css">
+        <link rel="stylesheet" href="../resources/table.css">
     </head>
     <body>
-        <%@include file="header.jsp" %>
+        <%@include file="../header.jsp" %>
         <div class="main-container">
             <table border="1" style="margin: 0 auto">
                 <thead>
@@ -56,6 +56,6 @@
                 </tbody>
             </table>
         </div>
-        <%@include file="footer.jsp" %>
+        <%@include file="../footer.jsp" %>
     </body>
 </html>

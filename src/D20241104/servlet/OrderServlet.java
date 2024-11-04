@@ -1,7 +1,7 @@
-package servlet;
+package D20241104.servlet;
 
-import dao.OrderDaoImpl;
-import dto.OrderDto;
+import D20241104.dao.OrderDaoImpl;
+import D20241104.dto.OrderDto;
 import type.Status;
 
 import javax.servlet.ServletException;
