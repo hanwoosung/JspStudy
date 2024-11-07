@@ -10,7 +10,7 @@
 <html>
 <head>
     <%
-        session.setAttribute("test", request.getParameter("test"));
+        session.setAttribute("test", request.getParameter("D20241105.test"));
     %>
 </head>
 <body>

@@ -20,7 +20,7 @@
             }
         %>
 
-        <form method="post" action="/loginCookie.jsp">
+        <form method="post" action="/20241104-2/loginCookie.jspnCookie.jsp">
             <input name="id" type="text">
             <input name="pw" type="text">
             <input value="aa" type="submit">

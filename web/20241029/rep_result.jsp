@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<%=request.getParameter("test")%>
+<%=request.getParameter("D20241105.test")%>
 </body>
 </html>

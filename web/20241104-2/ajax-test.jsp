@@ -32,9 +32,9 @@
                 console.log(response);
                 console.log(response.data);
                 if (response.data.trim() === '통과') {
-                    location.href = "test.jsp";
+                    location.href = "D20241105.test.jsp";
                 }else{
-                    location.href = "test.jsp";
+                    location.href = "D20241105.test.jsp";
                 }
             }).catch((error) => {
                 console.log(error);

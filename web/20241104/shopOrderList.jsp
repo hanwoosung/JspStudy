@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="../resources/table.css">
     </head>
     <body>
-        <%@include file="../header.jsp" %>
+        <%@include file="../20241104-2/header.jsp" %>
         <div class="main-container">
             <table border="1" style="margin: 0 auto;">
                 <thead>
@@ -38,6 +38,6 @@
                 </tbody>
             </table>
         </div>
-        <%@include file="../footer.jsp" %>
+        <%@include file="../20241104-2/footer.jsp" %>
     </body>
 </html>

@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/test")
+@WebServlet("/D20241105.test")
 public class TestServlet2 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -20,7 +20,7 @@ public class TestServlet2 extends HttpServlet {
         PrintWriter out = response.getWriter();
 /*        out.println("<html>");
         out.println("<head>");
-        out.println("<title>D20241031.test</title>");
+        out.println("<title>D20241031.D20241105.test</title>");
         out.println("</head>");
         out.println("<body>");
         out.println("<h1>TestServlet 응답 화면</h1>");

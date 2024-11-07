@@ -14,6 +14,6 @@
 request - forwarding 으로 열린 페이지
 <br>
 데이터 받아라 :<h1> ${param.test}</h1>
-데이터 받아라 :<h1> <%= request.getParameter("test")%></h1>
+데이터 받아라 :<h1> <%= request.getParameter("D20241105.test")%></h1>
 </body>
 </html>

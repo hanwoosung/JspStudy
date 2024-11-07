@@ -152,7 +152,7 @@
                 }).then((response) => {
                     console.log(response);
                     console.log(response.data);
-                    location.href = 'ajax-test.jsp'
+                    location.href = 'ajax-D20241105.test.jsp'
                 }).catch((error) => {
                     console.log(error);
                 });
